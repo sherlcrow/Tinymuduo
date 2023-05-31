@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="base">
+      <UniqueIdentifier>{ce6635a9-9aa1-431a-a966-07e44b82b2e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="logger">
+      <UniqueIdentifier>{8315fc0b-4bc1-49f1-be3b-71faec6b6027}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CurrentThread.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="noncopyable.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="Thread.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="ThreadPool.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="Timestamp.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="FixedBuffer.h">
+      <Filter>logger</Filter>
+    </ClInclude>
+    <ClInclude Include="FileUtil.h">
+      <Filter>logger</Filter>
+    </ClInclude>
+    <ClInclude Include="LogStream.h">
+      <Filter>logger</Filter>
+    </ClInclude>
+    <ClInclude Include="Logger.h">
+      <Filter>logger</Filter>
+    </ClInclude>
+    <ClInclude Include="LogFile.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Thread.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="CurrentThread.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="ThreadPool.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="Timestamp.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="FileUtil.cpp">
+      <Filter>logger</Filter>
+    </ClCompile>
+    <ClCompile Include="LogStream.cpp">
+      <Filter>logger</Filter>
+    </ClCompile>
+    <ClCompile Include="Logger.cpp">
+      <Filter>logger</Filter>
+    </ClCompile>
+    <ClCompile Include="LogFile.cpp" />
+  </ItemGroup>
+</Project>
