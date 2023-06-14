@@ -79,6 +79,13 @@ private:
 // 获取errno信息
 const char* getErrnoMsg(int savedErrno);
 
+extern Logger::LogLevel g_logLevel;
+
+inline Logger::LogLevel logLevel()
+{
+	return g_logLevel;
+}
+
 /**
  * 当日志等级小于对应等级才会输出
  * 比如设置等级为FATAL，则logLevel等级大于DEBUG和INFO，DEBUG和INFO等级的日志就不会输出

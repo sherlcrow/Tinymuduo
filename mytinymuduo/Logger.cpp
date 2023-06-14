@@ -24,15 +24,9 @@ Logger::LogLevel initLogLevel()
     return Logger::INFO;
 }
 
-Logger::LogLevel g_logLevel;
 Logger::OutputFunc g_output = defaultOutput;
 Logger::FlushFunc g_flush = defaultFlush;
 Logger::LogLevel g_logLevel = initLogLevel();
-
-inline Logger::LogLevel logLevel()
-{
-    return g_logLevel;
-}
 
 //根据错误码打印错误信息到errnobuf
 const char* getErrnoMsg(int savedErrno)

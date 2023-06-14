@@ -7,6 +7,21 @@
     <Filter Include="logger">
       <UniqueIdentifier>{8315fc0b-4bc1-49f1-be3b-71faec6b6027}</UniqueIdentifier>
     </Filter>
+    <Filter Include="timer">
+      <UniqueIdentifier>{1f0403b3-ec5e-4516-ac40-d94e592e523e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="net">
+      <UniqueIdentifier>{834ceed8-3559-4453-bee5-2ff6feeb7dd9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="net\poller">
+      <UniqueIdentifier>{af1b0b78-6075-49f7-9b39-54827dbaf3af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="memory">
+      <UniqueIdentifier>{c10796cc-1b74-4e41-b157-53b9200de139}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="http">
+      <UniqueIdentifier>{991bf457-708d-479f-95a7-9b91e021e67c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CurrentThread.h">
@@ -36,7 +51,75 @@
     <ClInclude Include="Logger.h">
       <Filter>logger</Filter>
     </ClInclude>
-    <ClInclude Include="LogFile.h" />
+    <ClInclude Include="LogFile.h">
+      <Filter>logger</Filter>
+    </ClInclude>
+    <ClInclude Include="Timer.h">
+      <Filter>timer</Filter>
+    </ClInclude>
+    <ClInclude Include="Channel.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="TimerQueue.h">
+      <Filter>timer</Filter>
+    </ClInclude>
+    <ClInclude Include="Poller.h">
+      <Filter>net\poller</Filter>
+    </ClInclude>
+    <ClInclude Include="EPollPoller.h">
+      <Filter>net\poller</Filter>
+    </ClInclude>
+    <ClInclude Include="PollPoller.h">
+      <Filter>net\poller</Filter>
+    </ClInclude>
+    <ClInclude Include="InetAddress.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="Socket.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="Acceptor.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="Buffer.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="Callback.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="EventLoop.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="EventLoopThread.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="EventLoopThreadPool.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="TcpConnection.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="TcpServer.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="MemoryPool.h">
+      <Filter>memory</Filter>
+    </ClInclude>
+    <ClInclude Include="HttpRequest.h">
+      <Filter>http</Filter>
+    </ClInclude>
+    <ClInclude Include="HttpContext.h">
+      <Filter>http</Filter>
+    </ClInclude>
+    <ClInclude Include="HttpResponse.h">
+      <Filter>http</Filter>
+    </ClInclude>
+    <ClInclude Include="HttpServer.h">
+      <Filter>http</Filter>
+    </ClInclude>
+    <ClInclude Include="AsyncLogger.h">
+      <Filter>logger</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Thread.cpp">
@@ -45,7 +128,6 @@
     <ClCompile Include="CurrentThread.cpp">
       <Filter>base</Filter>
     </ClCompile>
-    <ClCompile Include="main.cpp" />
     <ClCompile Include="ThreadPool.cpp">
       <Filter>base</Filter>
     </ClCompile>
@@ -61,6 +143,69 @@
     <ClCompile Include="Logger.cpp">
       <Filter>logger</Filter>
     </ClCompile>
-    <ClCompile Include="LogFile.cpp" />
+    <ClCompile Include="LogFile.cpp">
+      <Filter>logger</Filter>
+    </ClCompile>
+    <ClCompile Include="AsyncLogger.cpp">
+      <Filter>logger</Filter>
+    </ClCompile>
+    <ClCompile Include="TimerQueue.cpp">
+      <Filter>timer</Filter>
+    </ClCompile>
+    <ClCompile Include="Channel.cpp">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="DefaultPoller.cpp">
+      <Filter>net\poller</Filter>
+    </ClCompile>
+    <ClCompile Include="EPollPoller.cpp">
+      <Filter>net\poller</Filter>
+    </ClCompile>
+    <ClCompile Include="PollPoller.cpp">
+      <Filter>net\poller</Filter>
+    </ClCompile>
+    <ClCompile Include="InetAddress.cpp">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="Socket.cpp">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="Buffer.cpp">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="EventLoop.cpp">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="EventLoopThread.cpp">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="EventLoopThreadPool.cpp">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="Timer.cpp">
+      <Filter>timer</Filter>
+    </ClCompile>
+    <ClCompile Include="Acceptor.cpp">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="TcpConnection.cpp">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="TcpServer.cpp">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="MemoryPool.cc">
+      <Filter>memory</Filter>
+    </ClCompile>
+    <ClCompile Include="HttpContext.cpp">
+      <Filter>http</Filter>
+    </ClCompile>
+    <ClCompile Include="HttpResponse.cpp">
+      <Filter>http</Filter>
+    </ClCompile>
+    <ClCompile Include="HttpServer.cpp">
+      <Filter>http</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
